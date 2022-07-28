@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+console.log(window.location.href);
+var username = (window.location.href).split('?')[1]);
+</script>
+
+<body>
+
+<script>
+var username = (window.location.href).split('?')[1];
+fetch('https://github.com/' + username)
+  .then(res => res.text())
+  .then((textResponse) => {
+    document.querySelector('.text-bold color-fg-default').textContent = textResponse;
+  });
+
+var myIFrame = document.getElementById("myIframe");
+var content = myIFrame.contentWindow.document.body.innerHTML;
+</script>
+<h1>
+  Welcome to <span id="name-span"></span>
+  <iframe id="myIframe"></iframe>
+</h1>
+
+</body>
+</html>
