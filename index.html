@@ -1,127 +1,133 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Savir Singh - Official Website</title>
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <link rel="icon" href="whitelogo.png">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4X1Y45PF19"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4X1Y45PF19');
-</script>
 
 <style>
 
 body {
-  position: relative;
+  background-color: white;
+  font-family: Sans-Serif;
 }
 
-h1 {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-family: sans-serif;
-  font-size: 3.2rem;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo {
+  border-radius: 50%;
+  border: black 1px solid;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.phonelogo {
+  border-radius: 50%;
+  border: black 1px solid;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.current {
+  color: black;
+  text-decoration: underline;
+  margin-left: 24px;
+  font-size: 22px;
+}
+.profilelink {
+  color: black;
+  text-decoration: underline;
+  margin-left: 24px;
+  font-size: 22px;
+}
+.info {
+  color: black;
+  margin-left: 24px;
+  font-size: 22px;
 }
 
-p {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-family: sans-serif;
-  font-size: 2rem;
-  width: 56%;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#card {
+  position: fixed;
 }
 
-#socialicon {
-  position: relative;
-  top: 160px;
-  left: 100px;
+#messylinks {
+  position: fixed;
+  margin-left: 82%;	
+  margin-top: 20px;
 }
 
-input[type=text] {
-  width: 320px;
-  height: 48px;
+#messylinks a {
+  color: black;
   font-size: 20px;
-  font-family: sans-serif;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 2px blue dotted;
-  caret-color: white;
 }
 
-input[type=email] {
-  width: 320px;
-  height: 48px;
-  font-size: 20px;
-  font-family: sans-serif;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 2px blue dotted;
-  caret-color: white;
-}
-  
-textarea {
-  width: 320px;
-  font-size: 20px;
-  font-family: sans-serif;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 2px blue dotted;
-  caret-color: white;
+#maincontent {
+  margin-top: 20px;
+  width: 60%;
+  line-height: 1.6;
 }
 
-input[type=submit] {
-  width: 200px;
-  height: 48px;
-  font-size: 20px;
-  font-family: sans-serif;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 2px blue dotted;
+#maincontent a {
+  color: #2596be;
 }
 
-*:focus {
-    outline: none;
+a:hover {
+  opacity: 0.6;
+  border: black 1px dotted;
+}
+
+img:hover {
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 600px) {
-#about {
-  width: 100%;
+  #card {
+    display:none;
+  }
+  #messylinks {
+    display:none;
+  }
+  .phonelogo {
+    display:block;
+  }
+  #desktoponly {
+    display:none;
+  }
 }
+
+@media only screen and (min-width: 600px) {
+  .phonelogo {
+    display:none;
+  }
 }
 
 </style>
+
 </head>
 
-<body style="background-color: black">
+<body>
 
-<center><img width="160px" src="whitetextblackbacklogo.png"></center>
-<center><h1>Hi there, I'm Savir!</h1></center>
-<center><p id="about">I'm a Canadian computer programmer and web developer who is deeply interested in competitive programming, making cool websites, and creating new technologies.</p></center>
+<div id="card">
+<img class="logo" width="160px" src="logo.png"><br><br>
+<b class="info">Savir Singh</b><br><br>
+<a class="current">Home</a> [Current]<br><br>
+<a class="profilelink" href="/projects">Projects</a><br><br>
+<a class="profilelink" href="/contact">Contact</a>
+</div>
 
-<center><form action="https://thatformworks.pythonanywhere.com/mailsavir" method="POST">
-<br><br><br><hr style="width: 300px; border-top: 1px dashed blue;"><p>Contact Me <a target="_blank" href="https://github.com/savirsingh/thatformworks" style="-webkit-text-fill-color: gray;">(I made HTML forms work!)</a></p>
-<input name="address" placeholder="Your Email Address" type="email" required><br>
-  <textarea name="important" placeholder="Your Message" required></textarea><br>
-<input type="submit" value="Send">
-<br><br><p style="font-size: 16px">You can expect a response at the email address you provide within 48 hours.</p>
-</form></center>
+<div id="messylinks">
+<a target="_blank" href="/subscribe">- Contact me!</a><br><br>
+<a target="_blank" href="https://github.com/savirsingh">- Visit my GitHub!</a><br><br>
+<a target="_blank" href="https://github.com/savirsingh">- I'm on DMOJ!</a>
+</div>
 
-<p id="socialicon"><a style="border: 2px blue dotted;" target="_blank" href="https://github.com/savirsingh">GITHUB</a>&nbsp; <a style="border: 2px blue dotted;" target="_blank" href="https://feedite.pythonanywhere.com/@savirsingh">FEEDITE</a>&nbsp; <a style="border: 2px blue dotted;" target="_blank" href="/blog">BLOG</a></p>
-
+<center><img class="phonelogo" width="160px" src="logo.png"></center>
+<center><div id="maincontent">
+<div id="desktoponly"><br><br><br><br></div><br><h1>Hey, I'm Savir!</h1>
+<br><p>I'm a high school student from Canada. I love developing software, creating new technologies, competitive programming, and math, just to name a few things.</p>
+<p>I have many major achievements, including winning <a href="https://mycodeclub.io" target="_blank">My Code Club</a>'s Code-A-Thon, placing 1<sup>st</sup> place in <a target="_blank" href="https://peo-mc.ca">
+PEO Mississauga Chapter</a>'s High School Coding Contest and their annual Mathletics, as well as achieving a certificate of distinction in the University of Waterloo's Fryer Mathematics Contest 2022.</p>
+<p>When I'm not writing code or solving problems, I'm either reading, doing homework, writing programming editorials, or out for a walk.</p>
+<p>Since you're already here, you might as well check out <a href="/projects" target="_blank">my projects</a> and <a href="/blog" target="_blank">my active blog</a>. You can also see <a href="/contact" target="_blank">my contact info</a>.</p>
+<small>&copy 2022 Savir Singh. Website front end written 100% in HTML/CSS by me.</small>
+</div></center>
 
 </body>
 </html>
