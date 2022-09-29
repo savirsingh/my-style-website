@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Savir Singh - Contact</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="icon" href="whitelogo.png">
+
+<style>
+
+body {
+  background-color: white;
+  font-family: Sans-Serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+.logo {
+  border-radius: 50%;
+  border: black 1px solid;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.phonelogo {
+  border-radius: 50%;
+  border: black 1px solid;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.current {
+  color: black;
+  text-decoration: underline;
+  margin-left: 24px;
+  font-size: 22px;
+}
+.profilelink {
+  color: black;
+  text-decoration: underline;
+  margin-left: 24px;
+  font-size: 22px;
+}
+.info {
+  color: black;
+  margin-left: 24px;
+  font-size: 22px;
+}
+
+#card {
+  position: fixed;
+}
+
+#messylinks {
+  position: fixed;
+  margin-left: 82%;	
+  margin-top: 20px;
+}
+
+#messylinks a {
+  color: black;
+  font-size: 20px;
+}
+
+#maincontent {
+  margin-top: 20px;
+  width: 60%;
+  line-height: 1.6;
+}
+
+#maincontent a {
+  color: #2596be;
+}
+
+a:hover {
+  opacity: 0.6;
+  border: black 1px dotted;
+}
+
+img:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+  #card {
+    display:none;
+  }
+  #messylinks {
+    display:none;
+  }
+  .phonelogo {
+    display:block;
+  }
+  #desktoponly {
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .phonelogo {
+    display:none;
+  }
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: #bee8da;
+}
+input[type=email] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=email]:focus {
+  background-color: #bee8da;
+}
+
+textarea {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+textarea:focus {
+  background-color: #bee8da;
+}
+
+input[type=submit]:hover {
+  background-color: #bee8da;
+}
+
+input {
+  background-color: white;
+  width: 80%;
+  height: 32px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="card">
+<img class="logo" width="160px" src="logo.png"><br><br>
+<b class="info">Savir Singh</b><br><br>
+<a class="profilelink" href="/">Home</a><br><br>
+<a class="profilelink" href="/projects">Projects</a><br><br>
+<a class="current">Contact</a> [Current]
+</div>
+
+<div id="messylinks">
+<a target="_blank" href="/subscribe">- Contact me!</a><br><br>
+<a target="_blank" href="https://github.com/savirsingh">- Visit my GitHub!</a><br><br>
+<a target="_blank" href="https://github.com/savirsingh">- I'm on DMOJ!</a>
+</div>
+
+<center><img class="phonelogo" width="160px" src="logo.png"></center>
+<center><div id="maincontent">
+<div id="desktoponly"><br><br><br><br></div><br><h1>Contact Savir</h1>
+<br><p>I'm most active on weekends, if I have no homework pending. My contact information is listed on this page.</p>
+<p>Use this form to ask me a general question (almost anything!):</p><br>
+<center><form action="https://thatformworks.pythonanywhere.com/mailsavir" method="POST">
+<p>Contact Me <a target="_blank" href="https://github.com/savirsingh/thatformworks" style="-webkit-text-fill-color: gray;">(I made HTML forms work!)</a></p>
+<input name="address" placeholder="Your Email Address" type="email" required><br>
+  <textarea name="important" placeholder="Your Message" required></textarea><br>
+<input type="submit" value="Submit Form">
+<br><br><p style="font-size: 16px">You can expect a response at the email address you provide within 48 hours.</p>
+</form></center><br><br>
+<p>For professional or business emails, please contact kopichiki@gmail.com. This email address is generally reviewed everyday except for Sunday.</p><br>
+<p>For support with this website, please contact savir@mcode.club. This email address is reviewed on Sundays.</p><br>
+<p>For questions about competitive programming, or just any question really, my Discord is <code>volcano#9162</code>.</p>
+<small>&copy 2022 Savir Singh. Website front end written 100% in HTML/CSS by me.</small>
+</div></center>
+
+</body>
+</html>
