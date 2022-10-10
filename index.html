@@ -114,6 +114,20 @@ img:hover {
   .phonelogo {
     display:none;
   }
+  #mobile-hamburger {
+    display: none;
+  }
+}
+
+#mobile-card {
+  display: none;
+}
+
+#mobile-hamburger {
+   border: 1px solid blue;
+   background-color: white;
+   height:50px;
+   width:50px;
 }
 
 </style>
@@ -137,7 +151,12 @@ img:hover {
 <a target="_blank" href="https://dmoj.ca/user/volcano">- I'm on DMOJ!</a>
 </div>
 
-<center><img class="phonelogo" width="160px" src="logo.png"></center>
+<center><img class="phonelogo" width="160px" src="logo.png"></center><button onclick="toggle_mobile()" id="mobile-hamburger" style="font-size: 30px; float: right">☰</button>
+<div id="mobile-card">
+<br><a class="profilelink" href="/projects">Projects</a>
+<a class="profilelink" href="/contact">Contact</a>
+<a class="profilelink" href="/resume">Résumé</a>
+</div>
 <center><div id="maincontent">
 <div id="desktoponly"><br><br><br><br></div><br><h1>Hey, I'm Savir!</h1>
 <br><p>I'm a high school student from Canada. I love developing software, creating new technologies, competitive programming, and math, just to name a few things.</p>
@@ -147,6 +166,17 @@ PEO Mississauga Chapter</a>'s High School Coding Contest and their annual Mathle
 <p>Since you're already here, you might as well check out <a href="/projects" target="_blank">my projects</a> and <a href="/blog" target="_blank">my active blog</a>. You can also see <a href="/contact" target="_blank">my contact info</a>.</p>
 <small>&copy 2022 Savir Singh. Website front end written 100% in HTML/CSS by me.</small>
 </div></center>
+
+<script>
+function toggle_mobile() {
+  if (document.getElementById("mobile-card").style.display=="none") {
+      document.getElementById("mobile-card").style.display="block";
+  }
+  else {
+    document.getElementById("mobile-card").style.display="none";
+  }
+}
+</script>
 
 </body>
 </html>
